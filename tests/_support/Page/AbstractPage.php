@@ -13,39 +13,48 @@ namespace Page;
  */
 class AbstractPage
 {
+	/**
+	 * @var string
+	 */
+	public static $buttonSearch = "//button[@class='btn hasTooltip js-stools-btn-filter']";
 
-		/**
-		 * @var string
-		 */
-		public static $buttonSearch                 = "//button[@class='btn hasTooltip js-stools-btn-filter']";
+	/**
+	 * @var string
+	 */
+	public static $buttonSelectType = "#filter_type";
 
-		/**
-		 * @var string
-		 */
-		public static $buttonSelectType             = "#filter_type";
+	/**
+	 * @var string
+	 */
+	public static $fieldSearch = '#filter_search';
 
-		/**
-		 * @var string
-		 */
-		public static $fieldSearch                  = '#filter_search';
+	/**
+	 * @var string
+	 */
+	public static $buttonDelete = '#toolbar-delete';
 
-		/**
-		 * @var string
-		 */
-		public static $buttonDelete                 = '#toolbar-delete';
+	/**
+	 * @var string
+	 */
+	public static $message = '#system-message-container';
 
-		/**
-		 * @var string
-		 */
-		public static $message                      = '#system-message-container';
+	/**
+	 * @var string
+	 */
+	public static $listManager = '#manageList';
 
-		/**
-		 * @var string
-		 */
-		public static $listManager                  = '#manageList';
+	/**
+	 * @var string
+	 */
+	public static $checkBox = '#cb0';
 
-		/**
-		 * @var string
-		 */
-		public static $checkBox                     = '#cb0';
+	/**
+	 * @var string
+	 */
+	public static $textSuccess = 'Uninstalling the component was successful';
+
+	/**
+	 * @var string
+	 */
+	public static $textNoExtensions = 'There are no extensions installed matching your query.';
 }
